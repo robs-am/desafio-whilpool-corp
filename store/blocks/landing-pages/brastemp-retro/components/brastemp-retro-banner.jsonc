@@ -1,15 +1,16 @@
 {
-"flex-layout.row#brastemp-retro-section-1": {
-    "children": ["flex-layout.col#brastemp-section-1"],
+"flex-layout.row#brastemp-retro-banner": {
+    "children": ["flex-layout.col#brastemp-retro-banner"],
     "props": {
       "blockClass": "brastemp-retro-section-1",
       "horizontalAlign": "center",
-      "verticalAlign": "center"
+      "verticalAlign": "center",
+      "fullWidth": true
     }
   },
 
-  "flex-layout.col#brastemp-section-1": {
-    "children": ["rich-text#brastemp-retro-section-1", "list-context.image-list#demo"],
+  "flex-layout.col#brastemp-retro-banner": {
+    "children": ["rich-text#brastemp-retro-banner", "list-context.image-list#demo"],
     "props": {
       "blockClass": "brastemp-section-1",
       "width": 50
@@ -22,14 +23,14 @@
       "preload": true,
       "images": [
         {
-          "image": "https://cassol.vtexassets.com/assets/vtex.file-manager-graphql/images/ffeadf1d-c791-43ed-a60c-5b9bc0ebbbea___b407034c9de7419f2f36e82aa8c07ccc.webp",
+          "image": "assets/imgs/brastemp-retro-desktop.webp",
           "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/Class&Style-mobile.png"
         }
 
       ]
     }
   },
-  "rich-text#brastemp-retro-section-1": {
+  "rich-text#brastemp-retro-banner": {
     "props": {
       "text": "Brastemp Retrô"
     }
