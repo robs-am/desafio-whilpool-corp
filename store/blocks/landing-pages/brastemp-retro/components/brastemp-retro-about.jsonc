@@ -26,7 +26,7 @@
   },
 
   "flex-layout.row#brastemp-retro-about-row-2":{
-    "children": ["flex-layout.col#brastemp-retro-about-title", "flex-layout.col#brastemp-retro-about-text"],
+    "children": ["product-images#desktop",/* "list-context.image-list#brastemp-retro" */ "flex-layout.col#brastemp-retro-about-text"],
     "props": {
       "blockClass": "brastemp-retro-section-2",
       "horizontalAlign": "center",
@@ -34,13 +34,51 @@
     }
   },
 
-  "flex-layout.col#brastemp-retro-about-title": {
-    "children": ["rich-text#brastemp-retro-about-title"],
+  "product-images#desktop": {
     "props": {
-      "blockClass": "brastemp-section-2",
-      "width": 50
+      "aspectRatio": {
+        "desktop": "auto",
+        "phone": "auto"
+      },
+      "showNavigationArrows": true,
+      "displayThumbnailsArrows": true,
+      "thumbnailVisibility": "visible"
     }
   },
+
+  // "list-context.image-list#brastemp-retro": {
+  //   "children": ["slider-layout#brastemp-retro-about"],
+  //   "props": {
+  //     "height": 570,
+  //     "preload": true,
+  //     "images": [
+  //       {
+  //         "image": "assets/imgs/brastemp-retro-desktop.webp",
+  //         "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/Class&Style-mobile.png"
+  //       }
+  //     ]
+  //   }
+  // },
+  // "slider-layout#brastemp-retro-about":{
+  //   "props": {
+  //     "showNavigationArrows": "desktopOnly",
+  //     "showPaginationDots": "mobileOnly",
+  //     "itemsPerPage": 1,
+  //     "infinite": true,
+  //     "autoplay": {
+  //       "interval": 5000
+  //     },
+  //     "autoplaySpeed": 5000
+  //   }
+  // },
+
+  // "flex-layout.col#brastemp-retro-about-title": {
+  //   "children": ["rich-text#brastemp-retro-about-title"],
+  //   "props": {
+  //     "blockClass": "brastemp-section-2",
+  //     "width": 50
+  //   }
+  // },
 
  "rich-text#brastemp-retro-about-title":{
     "props": {
@@ -65,7 +103,7 @@
  },
  "rich-text#brastemp-retro-about-text-2":{
     "props": {
-      "text": "**Características** \n\n - 🔸Compartimentos modulares \n 🔸 Permite fazer gelo e acomodar pequenos itens congelados. \n 🔸 Tecnologia de ponta \n 🔸 Qualidade Brastemp"
+      "text": "**Características** \n\n  🔸Compartimentos modulares \n\n  🔸 Permite fazer gelo e acomodar pequenos itens congelados. \n\n  🔸 Tecnologia de ponta \n\n  🔸 Qualidade Brastemp"
     }
   }
 }

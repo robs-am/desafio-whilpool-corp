@@ -4,7 +4,8 @@
     "blocks": [
 
       "flex-layout.row#brastemp-retro-banner",
-      "flex-layout.row#brastemp-retro-about"
+      "flex-layout.row#brastemp-retro-about",
+      "flex-layout.row#brastemp-retro-shelf"
 
     ]
 

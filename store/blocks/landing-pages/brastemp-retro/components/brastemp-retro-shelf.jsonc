@@ -1,0 +1,31 @@
+{
+  "flex-layout.row#brastemp-retro-shelf":{
+    "children": ["list-context.product-list#brastemp-retro"],
+    "props": {
+      "blockClass": "brastemp-retro-section-3",
+      "horizontalAlign": "center",
+      "verticalAlign": "center"
+    }
+  },
+
+  "list-context.product-list#brastemp-retro": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#brastemp-retro-products"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  },
+  "slider-layout#brastemp-retro-products": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 3,
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "blockClass": "shelf"
+    }
+  }
+
+}
