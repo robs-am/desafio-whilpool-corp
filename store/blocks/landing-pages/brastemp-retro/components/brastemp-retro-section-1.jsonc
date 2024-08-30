@@ -1,0 +1,37 @@
+{
+"flex-layout.row#brastemp-retro-section-1": {
+    "children": ["flex-layout.col#brastemp-section-1"],
+    "props": {
+      "blockClass": "brastemp-retro-section-1",
+      "horizontalAlign": "center",
+      "verticalAlign": "center"
+    }
+  },
+
+  "flex-layout.col#brastemp-section-1": {
+    "children": ["rich-text#brastemp-retro-section-1", "list-context.image-list#demo"],
+    "props": {
+      "blockClass": "brastemp-section-1",
+      "width": 50
+    }
+  },
+  "list-context.image-list#demo": {
+    "children": ["slider-layout#demo-images"],
+    "props": {
+      "height": 570,
+      "preload": true,
+      "images": [
+        {
+          "image": "https://cassol.vtexassets.com/assets/vtex.file-manager-graphql/images/ffeadf1d-c791-43ed-a60c-5b9bc0ebbbea___b407034c9de7419f2f36e82aa8c07ccc.webp",
+          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/Class&Style-mobile.png"
+        }
+
+      ]
+    }
+  },
+  "rich-text#brastemp-retro-section-1": {
+    "props": {
+      "text": "Brastemp Retrô"
+    }
+  }
+}

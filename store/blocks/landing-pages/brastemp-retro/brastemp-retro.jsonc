@@ -1,0 +1,11 @@
+{
+  "store.custom#brastemp-retro": {
+    "title": "Brastemp Retrô",
+    "blocks": [
+      "flex-layout.row#brastemp-retro-section-1"
+
+    ]
+
+  }
+
+}
