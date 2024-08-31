@@ -1,3 +1,4 @@
 {
-  "react-banner-content": { "component": "BannerContent" }
+  "react-banner-content": { "component": "BannerContent" },
+  "react-product-summary": { "component": "ProductSummary" }
 }

@@ -24,10 +24,10 @@
     }
   },
   "flex-layout.col#brastemp-retro-product-right": {
-    "children": ["rich-text#brastemp-retro-product-title"],
+    "children": ["react-product-summary"],
     "props": {
-      "blockClass": "brastemp-retro-section-3-product-right",
-      "width": 50
+      "blockClass": "brastemp-retro-section-3-product-right"
+
     }
   }
 
