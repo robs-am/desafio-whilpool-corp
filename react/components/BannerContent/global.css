@@ -1,13 +1,21 @@
 
 .video-container {
-  max-height: 500px; /* Ajuste a altura máxima conforme necessário */
-  overflow: hidden; /* Isso garante que o vídeo não ultrapasse o contêiner */
-  display: flex; /* Isso permite centralizar o vídeo dentro do contêiner */
-  align-items: center; /* Alinha o vídeo verticalmente */
-  justify-content: center; /* Alinha o vídeo horizontalmente */
+  max-height: 500px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
+.image-container {
+  width: 100%;
+  overflow: hidden;
+}
 
+.full-width-image {
+  width: 100%;
+  height: auto;
+}
 
 .react-player {
   height: auto !important;

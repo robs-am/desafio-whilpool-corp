@@ -1,6 +1,6 @@
 {
 "flex-layout.row#brastemp-retro-about": {
-  "title": "",
+  "title": "Section 2 - About",
     "children": ["flex-layout.col#brastemp-retro-about"],
     "props": {
       "blockClass": "brastemp-retro-section-2",
@@ -68,6 +68,7 @@
   // },
 
  "rich-text#brastemp-retro-about-title":{
+  "title": "Título da Página",
     "props": {
       "text": "# Transforme sua casa com o estilo único do design Retrô",
       "blockClass": "brastemp-retro-about-title",

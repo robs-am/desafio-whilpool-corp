@@ -1,5 +1,6 @@
 {
 "flex-layout.row#brastemp-retro-banner": {
+  "title":"Section 1 - Banner Principal",
     "children": ["flex-layout.col#brastemp-retro-banner"],
     "props": {
       "blockClass": "brastemp-retro-section-1",
@@ -10,7 +11,7 @@
   },
 
   "flex-layout.col#brastemp-retro-banner": {
-    "children": [/* "rich-text#brastemp-retro-banner", "list-context.image-list#demo",  */"react-banner-video"],
+    "children": ["react-banner-content"],
     "props": {
       "blockClass": "brastemp-section-1",
       "width": 50
