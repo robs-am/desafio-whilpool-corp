@@ -10,8 +10,11 @@
 }
 
 @media (min-width: 1024px) {
+  .flexRowContent--brastemp-retro-section-1, .flexRowContent--brastemp-retro-section-2 {
+    margin-bottom:80px;
+  }
   .flexColChild--brastemp-section-2 {
-    padding: 0 60px;
+    padding: 0 80px;
   }
   .flexRowContent--brastemp-retro-section-2 {
     display: flex;

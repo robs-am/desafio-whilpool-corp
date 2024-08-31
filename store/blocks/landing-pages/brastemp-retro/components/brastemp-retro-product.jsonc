@@ -1,0 +1,34 @@
+{
+  "flex-layout.row#brastemp-retro-product": {
+    "title": "Section - Product",
+    "children": [
+      "flex-layout.col#brastemp-retro-product-left",
+      "flex-layout.col#brastemp-retro-product-right"
+    ],
+    "props": {
+      "blockClass": "brastemp-retro-section-3",
+      "horizontalAlign": "center",
+      "verticalAlign": "center"
+    }
+  },
+  "flex-layout.col#brastemp-retro-product-left": {
+    "children": ["rich-text#brastemp-retro-product-title"],
+    "props": {
+      "blockClass": "brastemp-retro-section-product-left",
+      "width": 50
+    }
+  },
+  "rich-text#brastemp-retro-product-title": {
+    "props": {
+      "text": "Conheça nossos produtos"
+    }
+  },
+  "flex-layout.col#brastemp-retro-product-right": {
+    "children": ["rich-text#brastemp-retro-product-title"],
+    "props": {
+      "blockClass": "brastemp-retro-section-3-product-right",
+      "width": 50
+    }
+  }
+
+}

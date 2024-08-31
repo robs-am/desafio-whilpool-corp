@@ -1,6 +1,6 @@
 {
 "flex-layout.row#brastemp-retro-banner": {
-  "title":"Section 1 - Banner Principal",
+  "title":"Section - Banner Principal",
     "children": ["flex-layout.col#brastemp-retro-banner"],
     "props": {
       "blockClass": "brastemp-retro-section-1",

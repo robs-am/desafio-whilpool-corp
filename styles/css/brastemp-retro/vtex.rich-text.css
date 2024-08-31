@@ -1,13 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Gantari:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 .headingLevel1--brastemp-retro-about-title {
   color: #242424;
   font-size: 32px;
   font-weight: 700;
   letter-spacing: .015em;
+  font-family: "Gantari", sans-serif;
 
+}
+.strong--brastemp-retro-about-title {
+  color: #FF4E1F;
+}
+
+.paragraph {
+  font-family: "Gantari", sans-serif;
+}
+
+.paragraph--brastemp-retro-about-text-1 {
+  font-size:16px;
 }
 
 @media (min-width: 1024px) {
   .headingLevel1--brastemp-retro-about-title {
-    font-size: 40px;
+    font-size: 48px;
+  }
+  .paragraph--brastemp-retro-about-text-1, .paragraph--brastemp-retro-about-text-2 {
+    max-width:450px;
+    font-size:18px;
   }
 }
