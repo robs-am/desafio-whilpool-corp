@@ -1,3 +1,5 @@
+
+
 .react-player {
   height: auto !important;
   aspect-ratio: 16/9;
@@ -15,7 +17,7 @@
 
 .video-container {
   position: relative;
-  pointer-events: ;
+
 }
 
 .link-video {

@@ -10,7 +10,7 @@
   },
 
   "flex-layout.col#brastemp-retro-banner": {
-    "children": ["rich-text#brastemp-retro-banner", "list-context.image-list#demo"],
+    "children": [/* "rich-text#brastemp-retro-banner", "list-context.image-list#demo",  */"react-banner-video"],
     "props": {
       "blockClass": "brastemp-section-1",
       "width": 50

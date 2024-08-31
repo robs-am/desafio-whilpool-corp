@@ -6,8 +6,10 @@
     "doc": "docs"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+    "test": "echo \"Error: no test specified\" && exit 1",
+     "tailwindcss": "tailwindcss -i ./react/src/input.css -o ./react/dist/output.css --watch"
+},
+
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -20,8 +22,6 @@
     "react-player": "^2.16.0"
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.20",
-    "postcss": "^8.4.41",
     "tailwindcss": "^3.4.10",
     "typescript": "^3.9.10"
   }
