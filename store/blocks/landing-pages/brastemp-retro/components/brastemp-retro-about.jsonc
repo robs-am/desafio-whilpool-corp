@@ -59,13 +59,7 @@
     }
   },
 
-  // "flex-layout.col#brastemp-retro-about-title": {
-  //   "children": ["rich-text#brastemp-retro-about-title"],
-  //   "props": {
-  //     "blockClass": "brastemp-section-2",
-  //     "width": 50
-  //   }
-  // },
+
 
  "rich-text#brastemp-retro-about-title":{
   "title": "Título da Página",
@@ -85,11 +79,13 @@
     }
   },
   "rich-text#brastemp-retro-about-text-1": {
+    "title": "Texto 1",
     "props": {
       "text": "**Sobre o produto** \n\n A Brastemp Retrô é ideal para quem busca transformar o ambiente de casa e imprimir sua personalidade na decoração, unindo elementos de suas referências ao que há de mais moderno e exclusivo."
     }
  },
  "rich-text#brastemp-retro-about-text-2":{
+  "title": "Texto 2",
     "props": {
       "text": "**Características** \n\n  🔸Compartimentos modulares \n\n  🔸 Permite fazer gelo e acomodar pequenos itens congelados. \n\n  🔸 Tecnologia de ponta \n\n  🔸 Qualidade Brastemp"
     }

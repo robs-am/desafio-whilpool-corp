@@ -3,55 +3,68 @@ import ReactPlayer from 'react-player';
 import "./global.css";
 
 interface BannerContent {
+  link?: string;
   videoUrl?: string;
   image?: string;
 }
 
-const BannerContent = ({ videoUrl, image }: BannerContent) => {
+const BannerContent = ({ link, videoUrl, image }: BannerContent) => {
   return (
     <div className="banner-content__container relative">
       {videoUrl && (
-        <div className="video-container">
-          <ReactPlayer
-            url={videoUrl}
-            width="100%"
-            height="100%"
-            className="react-player"
-            playing={true}
-            muted={true}
-            loop={true}
-          />
-        </div>
+        <a href={link} target="_blank" rel="noopener noreferrer">
+          <div className="video-container">
+            <ReactPlayer
+              url={videoUrl}
+              width="100%"
+              height="100%"
+              className="react-player"
+              playing={true}
+              muted={true}
+              loop={true}
+            />
+          </div>
+        </a>
       )}
 
       {image && !videoUrl && (
-        <div className="image-container">
-          <img src={image} alt="Banner" className="full-width-image" />
-        </div>
+        <a href={link} target="_blank" rel="noopener noreferrer">
+          <div className="image-container">
+            <img src={image} alt="Banner" className="full-width-image" />
+          </div>
+        </a>
       )}
     </div>
   );
 };
-
-export default BannerContent;
 
 BannerContent.schema = {
   title: "Banner Content",
   description: "Banner com vídeo ou imagem",
   type: "object",
   properties: {
+    link: {
+      title: "Link",
+      description: "URL para o qual o banner deve apontar ao clicar",
+      type: "string",
+      default: "",
+    },
     videoUrl: {
       title: "URL do vídeo",
       description: "URL do vídeo proveniente do Youtube, Vimeo ou DailyMotion",
       type: "string",
     },
     image: {
-      title: 'Image',
-      type: 'string',
-      default: '',
+      title: "Imagem",
+      description: "Imagem do banner",
+      type: "string",
+      default: "",
       widget: {
-        'ui:widget': 'image-uploader',
+        "ui:widget": "image-uploader",
       },
     },
   },
 };
+
+
+export default BannerContent;

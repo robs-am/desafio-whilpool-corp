@@ -1,0 +1,13 @@
+.headingLevel1--brastemp-retro-about-title {
+  color: #242424;
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: .015em;
+
+}
+
+@media (min-width: 1024px) {
+  .headingLevel1--brastemp-retro-about-title {
+    font-size: 40px;
+  }
+}
