@@ -4,18 +4,22 @@
 
 
 
-.flexColChild--brastemp-section-2 {
+.flexRow--brastemp-retro-section-2 {
   background: #F5F5F5;
   padding: 0 24px;
+}
+
+.flexRowContent--brastemp-retro-section-2-row {
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 @media (min-width: 1024px) {
   .flexRowContent--brastemp-retro-section-1, .flexRowContent--brastemp-retro-section-2 {
     margin-bottom:80px;
   }
-  .flexColChild--brastemp-section-2 {
-    padding: 0 80px;
-  }
+
+
   .flexRowContent--brastemp-retro-section-2 {
     display: flex;
     gap:40px;
@@ -25,6 +29,7 @@
     align-items: center;
   }
   .flexCol--brastemp-section-2-text {
-    padding: 0 40px;;
+    display: flex;
+    align-items: center;
   }
 }

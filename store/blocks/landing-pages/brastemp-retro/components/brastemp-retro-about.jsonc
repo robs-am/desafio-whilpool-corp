@@ -35,7 +35,7 @@
       "flex-layout.col#brastemp-retro-about-text"
     ],
     "props": {
-      "blockClass": "brastemp-retro-section-2",
+      "blockClass": "brastemp-retro-section-2-row",
       "horizontalAlign": "center",
       "verticalAlign": "center"
     }
@@ -67,9 +67,10 @@
       "showPaginationDots": "mobileOnly",
       "itemsPerPage": 1,
       "infinite": true,
-        "autoplay": {
-          "interval": 2000
-        }
+      "autoPlay": true,
+      "autoPlaySpeed": 5000
+
+
         //"autoplaySpeed": 1000
       }
     },
