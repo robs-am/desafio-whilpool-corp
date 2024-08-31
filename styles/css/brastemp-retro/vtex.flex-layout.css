@@ -1,0 +1,27 @@
+.flexRowContent--brastemp-retro-section-1, .flexRowContent--brastemp-retro-section-2 {
+  margin-bottom:40px;
+}
+
+
+
+.flexColChild--brastemp-section-2 {
+  background: #F5F5F5;
+  padding: 0 24px;
+}
+
+@media (min-width: 1024px) {
+  .flexColChild--brastemp-section-2 {
+    padding: 0 60px;
+  }
+  .flexRowContent--brastemp-retro-section-2 {
+    display: flex;
+    gap:40px;
+  }
+  .flexColChild--brastemp-section-2-text {
+    display: flex;
+    align-items: center;
+  }
+  .flexCol--brastemp-section-2-text {
+    padding: 0 40px;;
+  }
+}

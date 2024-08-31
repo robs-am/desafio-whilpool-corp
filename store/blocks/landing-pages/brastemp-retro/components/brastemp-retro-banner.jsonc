@@ -13,27 +13,10 @@
   "flex-layout.col#brastemp-retro-banner": {
     "children": ["react-banner-content"],
     "props": {
-      "blockClass": "brastemp-section-1",
-      "width": 50
-    }
-  },
-  "list-context.image-list#demo": {
-    "children": ["slider-layout#demo-images"],
-    "props": {
-      "height": 570,
-      "preload": true,
-      "images": [
-        {
-          "image": "assets/imgs/brastemp-retro-desktop.webp",
-          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/Class&Style-mobile.png"
-        }
+      "blockClass": "brastemp-section-1"
 
-      ]
-    }
-  },
-  "rich-text#brastemp-retro-banner": {
-    "props": {
-      "text": "Brastemp Retrô"
     }
   }
+
+
 }

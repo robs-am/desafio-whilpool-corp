@@ -1,32 +1,39 @@
 {
-"flex-layout.row#brastemp-retro-about": {
-  "title": "Section 2 - About",
+  "flex-layout.row#brastemp-retro-about": {
+    "title": "Section 2 - About",
     "children": ["flex-layout.col#brastemp-retro-about"],
     "props": {
       "blockClass": "brastemp-retro-section-2",
       "horizontalAlign": "center",
-      "verticalAlign": "center"
+      "verticalAlign": "center",
+      "fullWidth": true
     }
   },
 
   "flex-layout.col#brastemp-retro-about": {
-    "children": ["flex-layout.row#brastemp-retro-about-row-1","flex-layout.row#brastemp-retro-about-row-2"],
+    "children": [
+      "flex-layout.row#brastemp-retro-about-row-1",
+      "flex-layout.row#brastemp-retro-about-row-2"
+    ],
     "props": {
       "blockClass": "brastemp-section-2",
       "width": 50
     }
   },
-  "flex-layout.row#brastemp-retro-about-row-1":{
+  "flex-layout.row#brastemp-retro-about-row-1": {
     "children": ["rich-text#brastemp-retro-about-title"],
     "props": {
-      "blockClass": "brastemp-retro-section-2",
+      "blockClass": "brastemp-retro-section-2-title",
       "horizontalAlign": "center",
       "verticalAlign": "center"
     }
   },
 
-  "flex-layout.row#brastemp-retro-about-row-2":{
-    "children": ["list-context.image-list#brastemp-retro", "flex-layout.col#brastemp-retro-about-text"],
+  "flex-layout.row#brastemp-retro-about-row-2": {
+    "children": [
+      "list-context.image-list#brastemp-retro",
+      "flex-layout.col#brastemp-retro-about-text"
+    ],
     "props": {
       "blockClass": "brastemp-retro-section-2",
       "horizontalAlign": "center",
@@ -41,28 +48,35 @@
       "images": [
         {
           "image": "assets/imgs/brastemp-retro-desktop.webp",
-          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/Class&Style-mobile.png"
+          "mobileImage": "assets/imgs/brastemp-retro-desktop.webp"
+        },
+        {
+          "image": "assets/imgs/frigobar-vinho.jpg",
+          "mobileImage": "assets/imgs/frigobar-vinho.jpg"
+        },
+        {
+          "image": "assets/imgs/frigobar-azul.webp",
+          "mobileImage": "assets/imgs/frigobar-azul.webp"
         }
       ]
     }
   },
-  "slider-layout#brastemp-retro-about":{
+  "slider-layout#brastemp-retro-about": {
     "props": {
       "showNavigationArrows": "desktopOnly",
       "showPaginationDots": "mobileOnly",
       "itemsPerPage": 1,
-      "infinite": true,
-      "autoplay": {
-        "interval": 5000
-      },
-      "autoplaySpeed": 5000
+      "infinite": true
+      //   "autoplay": {
+      //     "interval": 2000
+      //   },
+      //   "autoplaySpeed": 1000
+      // }
     }
   },
 
-
-
- "rich-text#brastemp-retro-about-title":{
-  "title": "Título da Página",
+  "rich-text#brastemp-retro-about-title": {
+    "title": "Título da Página",
     "props": {
       "text": "# Transforme sua casa com o estilo único do design Retrô",
       "blockClass": "brastemp-retro-about-title",
@@ -72,9 +86,12 @@
   },
 
   "flex-layout.col#brastemp-retro-about-text": {
-    "children": ["rich-text#brastemp-retro-about-text-1", "rich-text#brastemp-retro-about-text-2"],
+    "children": [
+      "rich-text#brastemp-retro-about-text-1",
+      "rich-text#brastemp-retro-about-text-2"
+    ],
     "props": {
-      "blockClass": "brastemp-section-2",
+      "blockClass": "brastemp-section-2-text",
       "width": 50
     }
   },
@@ -83,9 +100,9 @@
     "props": {
       "text": "**Sobre o produto** \n\n A Brastemp Retrô é ideal para quem busca transformar o ambiente de casa e imprimir sua personalidade na decoração, unindo elementos de suas referências ao que há de mais moderno e exclusivo."
     }
- },
- "rich-text#brastemp-retro-about-text-2":{
-  "title": "Texto 2",
+  },
+  "rich-text#brastemp-retro-about-text-2": {
+    "title": "Texto 2",
     "props": {
       "text": "**Características** \n\n  🔸Compartimentos modulares \n\n  🔸 Permite fazer gelo e acomodar pequenos itens congelados. \n\n  🔸 Tecnologia de ponta \n\n  🔸 Qualidade Brastemp"
     }
