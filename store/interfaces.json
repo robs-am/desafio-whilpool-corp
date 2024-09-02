@@ -1,4 +1,5 @@
 {
   "react-banner-content": { "component": "BannerContent" },
-  "react-product-summary": { "component": "ProductSummary" }
+  "react-product-summary": { "component": "ProductSummary" },
+  "react-image-gallery": { "component": "ImageGallery" }
 }

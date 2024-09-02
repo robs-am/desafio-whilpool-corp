@@ -12,17 +12,13 @@
     }
   },
   "flex-layout.col#brastemp-retro-product-left": {
-    "children": ["rich-text#brastemp-retro-product-title"],
+    "children": ["react-image-gallery"],
     "props": {
       "blockClass": "brastemp-retro-section-product-left",
       "width": 50
     }
   },
-  "rich-text#brastemp-retro-product-title": {
-    "props": {
-      "text": "Conheça nossos produtos"
-    }
-  },
+
   "flex-layout.col#brastemp-retro-product-right": {
     "children": ["react-product-summary"],
     "props": {
