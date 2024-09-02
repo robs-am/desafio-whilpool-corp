@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './global.css';
 
 // URLs dos placeholders
@@ -20,6 +20,13 @@ const ImageGallery: React.FC = () => {
     { src: placeholder2, alt: 'Image 2' },
     { src: placeholder3, alt: 'Image 3' },
   ];
+
+  // Defina a primeira imagem como selecionada ao carregar a página
+  useEffect(() => {
+    if (images.length > 0) {
+      setSelectedImage(images[0]);
+    }
+  }, []);
 
   const handleImageClick = (image: Image) => {
     setSelectedImage(image);
