@@ -26,8 +26,9 @@
   transition: border-color 0.3s;
 }
 
+
 .thumbnail:hover {
-  border-color: #007bff;
+  border: 2px solid #FF5733;
 }
 
 .selected-image-container {
