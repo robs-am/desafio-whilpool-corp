@@ -12,6 +12,7 @@
     }
   },
   "flex-layout.col#brastemp-retro-product-left": {
+    "title": "Image Gallery",
     "children": ["react-image-gallery"],
     "props": {
       "blockClass": "brastemp-retro-section-product-left",
@@ -20,6 +21,7 @@
   },
 
   "flex-layout.col#brastemp-retro-product-right": {
+    "title": "Product Description",
     "children": ["react-product-summary"],
     "props": {
       "blockClass": "brastemp-retro-section-3-product-right"
