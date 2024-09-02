@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import './global.css';
 
 // URLs dos placeholders
-const placeholder1 = 'https://picsum.photos/600?random=1';
-const placeholder2 = 'https://picsum.photos/600?random=2';
-const placeholder3 = 'https://picsum.photos/600?random=3';
+const placeholder1 = 'https://brastemp.vtexassets.com/arquivos/ids/219095-500-500?v=637497987961230000&width=500&height=500&aspect=true';
+const placeholder2 = 'https://brastemp.vtexassets.com/arquivos/ids/219093-500-500?v=637497987562370000&width=500&height=500&aspect=true';
+const placeholder3 = 'https://brastemp.vtexassets.com/arquivos/ids/219094-500-500?v=637497987715100000&width=500&height=500&aspect=true';
 
 interface Image {
   src: string;
@@ -14,7 +14,7 @@ interface Image {
 const ImageGallery: React.FC = () => {
   const [selectedImage, setSelectedImage] = useState<Image | null>(null);
 
-
+  // Defina as imagens diretamente no componente
   const images: Image[] = [
     { src: placeholder1, alt: 'Image 1' },
     { src: placeholder2, alt: 'Image 2' },
