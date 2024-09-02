@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './global.css';
 
-// Defina as imagens padrão
+
 const defaultImages = [
   { src: 'https://brastemp.vtexassets.com/arquivos/ids/219095-500-500?v=637497987961230000&width=500&height=500&aspect=true', alt: 'Image 1' },
   { src: 'https://brastemp.vtexassets.com/arquivos/ids/219093-500-500?v=637497987562370000&width=500&height=500&aspect=true', alt: 'Image 2' },
@@ -17,7 +17,7 @@ interface ImageGalleryProps {
   images?: Image[];
 }
 
-// Define o componente
+
 const ImageGallery: React.FC<ImageGalleryProps> = ({ images = defaultImages }) => {
   const [selectedImage, setSelectedImage] = useState<Image | null>(null);
 
@@ -59,7 +59,7 @@ const ImageGallery: React.FC<ImageGalleryProps> = ({ images = defaultImages }) =
   );
 };
 
-// Define o schema separadamente e exporta
+
 const imageGallerySchema = {
   "title": "Image Gallery",
   "description": "Uma galeria de imagens com miniaturas e imagem selecionada.",
@@ -91,7 +91,7 @@ const imageGallerySchema = {
   "required": []
 };
 
-// Adiciona o schema ao componente
+
 const ImageGalleryWithSchema = Object.assign(ImageGallery, { schema: imageGallerySchema });
 
 export default ImageGalleryWithSchema;
