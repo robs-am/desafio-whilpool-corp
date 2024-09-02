@@ -16,6 +16,7 @@ const ProductSummary: React.FC = () => {
       </div>
       <div className="brastemp-purchase-box">
         <h4 className="brastemp-purchase-title">{product.title}</h4>
+        <p className="brastemp-purchase-description">{product.description}</p>
         <p className="brastemp-purchase-price">{product.price}</p>
         <p className="brastemp-purchase-installments">{product.installments}</p>
         <button className="brastemp-purchase-button">{product.buttonLabel}</button>
