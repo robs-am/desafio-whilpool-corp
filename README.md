@@ -26,6 +26,12 @@ Este componente é responsável pela renderização de ums simulação do Frigob
 
 Este componente é responsável por renderizar uma galeria de imagens com thumbnails para visualizaçõws de diferentes perspectivas do produto
 
+
+### Preview
+
+<a href="https://www.loom.com/share/60bdb09790a0409a85114d0610b14a65?sid=124f0ce3-7fcc-43ba-96cc-acff804f0846" target="_blank">
+  <img src="https://cdn.loom.com/sessions/thumbnails/60bdb09790a0409a85114d0610b14a65-with-play.jpg" alt="Desktop">
+</a>
     
 ## Rodando localmente
 
