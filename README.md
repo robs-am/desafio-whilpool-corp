@@ -8,9 +8,9 @@ Este repositório faz parte do desafio técnico para vaga de Desenvolvedor Fron-
 
 ## Tech Stack
   - React
- - JavaScript
- - TypeScript
- - TailwindCSS
+  - TypeScript
+  - VTEX
+
 
 
 ## Sobre
