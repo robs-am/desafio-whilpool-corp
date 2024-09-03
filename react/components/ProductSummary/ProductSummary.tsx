@@ -27,7 +27,7 @@ const ProductSummary: React.FC<ProductSummaryProps> = ({
         <p className="brastemp-purchase-price" itemProp="price">{price}</p>
         <p className="brastemp-purchase-installments">{installments}</p>
         <button
-          /* onClick={notify} */
+
           className="brastemp-purchase-button"
           aria-label={`Clique para ${buttonLabel}`}
         >
@@ -39,7 +39,7 @@ const ProductSummary: React.FC<ProductSummaryProps> = ({
   );
 };
 
-// Adiciona o schema ao componente
+
 const productSummarySchema = {
   title: "Product Summary",
   type: "object",
