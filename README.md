@@ -24,7 +24,7 @@ Este componente é responsável pela renderização de ums simulação do Frigob
 
 ### ImageGallery: 
 
-Este componente é responsável por renderizar uma galeria de imagens com thumbnails para visualizaçõa de diferentes perspectivas do produto
+Este componente é responsável por renderizar uma galeria de imagens com thumbnails para visualizaçõws de diferentes perspectivas do produto
 
     
 ## Rodando localmente
