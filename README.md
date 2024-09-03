@@ -14,9 +14,9 @@ Este repositório faz parte do desafio técnico para vaga de Desenvolvedor Fron-
 
 
 ## Sobre
-Foi utilizado o store theme da vtex como base para o projeto. Desenvolvi 3 componentes customziados:
+Para este redesign, resolvi utilizar como base a identidade visual já existente do produto consultando o próprio site da Brastemp. Foi utilizado o store theme da vtex como base para o projeto. Desenvolvi 3 componentes customziados:
 
-#### BannerComponent: 
+#### BannerContent: 
 Este componente é responsável pela renderização do banner principal. Através do site-editor, o cliente pode escolher entre vídeo ou Banner (caso opte pela performance). Para que a imagem apareça, é necessário retirar o link do provedor (youtuvbe, vimeo)
 
 #### ProductSummary: 

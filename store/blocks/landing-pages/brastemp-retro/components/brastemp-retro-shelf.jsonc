@@ -27,11 +27,15 @@
     "blocks": ["product-summary.shelf"],
     "children": ["slider-layout#brastemp-retro-products"],
     "props": {
-      "orderBy": "OrderByTopSaleDESC"
+      "orderBy": "OrderByTopSaleDESC",
+      "blockClass": "brastemp-retro-shelf"
     }
   },
   "slider-layout#brastemp-retro-products": {
     "props": {
+
+      "showNavigationArrows": "desktopOnly",
+      "showPaginationDots": "mobileOnly",
       "itemsPerPage": {
         "desktop": 4,
         "tablet": 3,
