@@ -1,8 +1,6 @@
 import React from 'react';
-// import { ToastContainer, toast } from 'react-toastify';
-// import 'react-toastify/dist/ReactToastify.css';
 import './global.css';
-
+declare function alert(message: string): void;
 interface ProductSummaryProps {
   title?: string;
   price?: string;
@@ -18,6 +16,11 @@ const ProductSummary: React.FC<ProductSummaryProps> = ({
   installments = "10x de R$ 129,90 sem juros",
   buttonLabel = "Adicionar ao Carrinho",
 }) => {
+
+  const handleAddToCart = () => {
+    alert("Produto adicionado ao carrinho");
+  };
+
   return (
     <section className="brastemp-purchase" itemScope itemType="https://schema.org/Product">
       <div className="brastemp-purchase-description"></div>
@@ -27,18 +30,16 @@ const ProductSummary: React.FC<ProductSummaryProps> = ({
         <p className="brastemp-purchase-price" itemProp="price">{price}</p>
         <p className="brastemp-purchase-installments">{installments}</p>
         <button
-
           className="brastemp-purchase-button"
           aria-label={`Clique para ${buttonLabel}`}
+          onClick={handleAddToCart} // Manipulador de clique
         >
           {buttonLabel}
         </button>
       </div>
-      {/* <ToastContainer /> */}
     </section>
   );
 };
-
 
 const productSummarySchema = {
   title: "Product Summary",
