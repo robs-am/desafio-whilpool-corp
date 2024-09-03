@@ -2,10 +2,6 @@
   border-radius: 50%;
 }
 
-.containerNormal :global(.vtex-product-summary-2-x-containerNormal ) {
-  padding: 0 20px;
-}
-
 .container :global(.vtex-modal-layout-0-x-triggerContainer) {
   opacity: 0;
   transition: opacity 200ms ease-in-out;
@@ -30,7 +26,8 @@
 .brandName {
   font-weight: 600;
   font-size: 18px;
-  color: #2E2E2E;
+  color: #333;
+  font-family: "Gantari", sans-serif;
 }
 
 .container {

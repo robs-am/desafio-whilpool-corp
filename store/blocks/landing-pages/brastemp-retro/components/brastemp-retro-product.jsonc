@@ -22,6 +22,7 @@
 
   "flex-layout.col#brastemp-retro-product-right": {
     "title": "Product Description",
+
     "children": ["react-product-summary"],
     "props": {
       "blockClass": "brastemp-retro-section-3-product-right"

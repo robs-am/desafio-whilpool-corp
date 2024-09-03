@@ -20,7 +20,6 @@
       "schema": "./src/blocks/image-gallery/schema.ts"
     }
   },
-
   "dependencies": {
     "vtex.store": "2.x",
     "vtex.store-header": "2.x",

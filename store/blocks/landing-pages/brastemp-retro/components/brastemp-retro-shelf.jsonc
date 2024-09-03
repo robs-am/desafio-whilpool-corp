@@ -1,10 +1,25 @@
 {
   "flex-layout.row#brastemp-retro-shelf":{
-    "children": ["list-context.product-list#brastemp-retro"],
+    "children": ["flex-layout.col#brastemp-retro-shelf"],
     "props": {
       "blockClass": "brastemp-retro-section-3",
       "horizontalAlign": "center",
       "verticalAlign": "center"
+    }
+  },
+"flex-layout.col#brastemp-retro-shelf":{
+    "children": ["rich-text#brastemp-retro-shelf","list-context.product-list#brastemp-retro"],
+    "props": {
+      "blockClass": "brastemp-retro-shelf"
+
+    }
+},
+  "rich-text#brastemp-retro-shelf": {
+    "props": {
+      "text": "### Mais Vendidos",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": "brastemp-retro-shelf-title"
     }
   },
 

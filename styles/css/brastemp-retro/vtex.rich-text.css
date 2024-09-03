@@ -21,7 +21,17 @@
   font-size:16px;
 }
 
+.headingLevel3--brastemp-retro-shelf-title {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: .015em;
+  font-family: "Gantari", sans-serif;
+}
+
 @media (min-width: 1024px) {
+  .headingLevel3--brastemp-retro-shelf-title{
+    font-size: 32px;
+  }
   .headingLevel1--brastemp-retro-about-title {
     font-size: 48px;
   }
