@@ -20,11 +20,11 @@ Para este redesign, resolvi utilizar como base a identidade visual já existente
 Este componente é responsável pela renderização do banner principal. Através do site-editor, o cliente pode escolher entre vídeo ou Banner (caso opte pela performance). Para que a imagem apareça, é necessário retirar o link do provedor (youtube, vimeo)
 
 #### ProductSummary: 
-Este componente é responsável pela renderização de ums simulação do Frigobar Retrô, já que não estamos usando o vendor oficial da Brastemp para extrair as informações do contexto do Produto.
+Este componente é responsável pela renderização de uma  simulação do Frigobar Retrô, já que não estamos usando o vendor oficial da Brastemp para extrair as informações do contexto do Produto.
 
 ### ImageGallery: 
 
-Este componente é responsável por renderizar uma galeria de imagens com thumbnails para visualizaçõws de diferentes perspectivas do produto
+Este componente é responsável por renderizar uma galeria de imagens com thumbnails para visualizações de diferentes perspectivas do produto
 
 
 ### Preview
