@@ -32,7 +32,7 @@ const ProductSummary: React.FC<ProductSummaryProps> = ({
         <button
           className="brastemp-purchase-button"
           aria-label={`Clique para ${buttonLabel}`}
-          onClick={handleAddToCart} // Manipulador de clique
+          onClick={handleAddToCart}
         >
           {buttonLabel}
         </button>
