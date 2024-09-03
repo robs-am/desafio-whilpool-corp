@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import './global.css';
 
-
 const defaultImages = [
-  { src: 'https://brastemp.vtexassets.com/arquivos/ids/219095-500-500?v=637497987961230000&width=500&height=500&aspect=true', alt: 'Image 1' },
-  { src: 'https://brastemp.vtexassets.com/arquivos/ids/219093-500-500?v=637497987562370000&width=500&height=500&aspect=true', alt: 'Image 2' },
-  { src: 'https://brastemp.vtexassets.com/arquivos/ids/219094-500-500?v=637497987715100000&width=500&height=500&aspect=true', alt: 'Image 3' },
+  { src: 'https://brastemp.vtexassets.com/arquivos/ids/219095-500-500?v=637497987961230000&width=500&height=500&aspect=true', alt: 'Descrição da Imagem 1' },
+  { src: 'https://brastemp.vtexassets.com/arquivos/ids/219093-500-500?v=637497987562370000&width=500&height=500&aspect=true', alt: 'Descrição da Imagem 2' },
+  { src: 'https://brastemp.vtexassets.com/arquivos/ids/219094-500-500?v=637497987715100000&width=500&height=500&aspect=true', alt: 'Descrição da Imagem 3' },
 ];
 
 interface Image {
@@ -16,7 +15,6 @@ interface Image {
 interface ImageGalleryProps {
   images?: Image[];
 }
-
 
 const ImageGallery: React.FC<ImageGalleryProps> = ({ images = defaultImages }) => {
   const [selectedImage, setSelectedImage] = useState<Image | null>(null);
@@ -33,6 +31,7 @@ const ImageGallery: React.FC<ImageGalleryProps> = ({ images = defaultImages }) =
 
   return (
     <div className="gallery-container">
+
       <div className="gallery">
         <div className="thumbnails">
           {images.map((image, index) => (
@@ -42,23 +41,27 @@ const ImageGallery: React.FC<ImageGalleryProps> = ({ images = defaultImages }) =
               alt={image.alt}
               onClick={() => handleImageClick(image)}
               className={`thumbnail ${selectedImage?.src === image.src ? 'selected' : ''}`}
+              aria-label={`Selecionar ${image.alt}`}
             />
           ))}
         </div>
       </div>
       <div className="selected-image-container">
         {selectedImage && (
-          <img
-            src={selectedImage.src}
-            alt={selectedImage.alt}
-            className="selected"
-          />
+          <figure>
+            <img
+              src={selectedImage.src}
+              alt={selectedImage.alt}
+              className="selected"
+              loading="lazy"
+            />
+
+          </figure>
         )}
       </div>
     </div>
   );
 };
-
 
 const imageGallerySchema = {
   "title": "Image Gallery",
@@ -90,7 +93,6 @@ const imageGallerySchema = {
   },
   "required": []
 };
-
 
 const ImageGalleryWithSchema = Object.assign(ImageGallery, { schema: imageGallerySchema });
 

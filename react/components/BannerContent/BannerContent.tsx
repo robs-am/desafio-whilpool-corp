@@ -6,13 +6,14 @@ interface BannerContent {
   link?: string;
   videoUrl?: string;
   image?: string;
+  altText?: string;
 }
 
-const BannerContent = ({ link, videoUrl, image }: BannerContent) => {
+const BannerContent = ({ link, videoUrl, image, altText = "Descrição do banner" }: BannerContent) => {
   return (
     <div className="banner-content__container relative">
       {videoUrl && (
-        <a href={link} target="_blank" rel="noopener noreferrer">
+        <a href={link} target="_blank" rel="noopener noreferrer" aria-label="Veja o vídeo relacionado">
           <div className="video-container">
             <ReactPlayer
               url={videoUrl}
@@ -28,9 +29,9 @@ const BannerContent = ({ link, videoUrl, image }: BannerContent) => {
       )}
 
       {image && !videoUrl && (
-        <a href={link} target="_blank" rel="noopener noreferrer">
+        <a href={link} target="_blank" rel="noopener noreferrer" aria-label="Veja mais detalhes">
           <div className="image-container">
-            <img src={image} alt="Banner" className="full-width-image" />
+            <img src={image} alt={altText} className="full-width-image" />
           </div>
         </a>
       )}
@@ -63,8 +64,13 @@ BannerContent.schema = {
         "ui:widget": "image-uploader",
       },
     },
+    altText: {
+      title: "Texto Alternativo",
+      description: "Texto alternativo para descrever a imagem do banner",
+      type: "string",
+      default: "Descrição do banner",
+    },
   },
 };
-
 
 export default BannerContent;

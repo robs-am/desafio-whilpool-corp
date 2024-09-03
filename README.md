@@ -45,11 +45,9 @@ Entre no diretório do projeto
 Instale as dependências:
 
 ```bash
-yarn install
+npm install
 ```
-```bash
-yarn tailwindcss
-```
+
 Inicie o ambiente de desenvolvimento VTEX IO:
 
 ```bash

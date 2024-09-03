@@ -1,6 +1,6 @@
 import React from 'react';
 // import { ToastContainer, toast } from 'react-toastify';
-//import 'react-toastify/dist/ReactToastify.css';
+// import 'react-toastify/dist/ReactToastify.css';
 import './global.css';
 
 interface ProductSummaryProps {
@@ -18,17 +18,19 @@ const ProductSummary: React.FC<ProductSummaryProps> = ({
   installments = "10x de R$ 129,90 sem juros",
   buttonLabel = "Adicionar ao Carrinho",
 }) => {
-
-
   return (
-    <section className="brastemp-purchase">
+    <section className="brastemp-purchase" itemScope itemType="https://schema.org/Product">
       <div className="brastemp-purchase-description"></div>
       <div className="brastemp-purchase-box">
-        <h4 className="brastemp-purchase-title">{title}</h4>
-        <p className="brastemp-purchase-description">{description}</p>
-        <p className="brastemp-purchase-price">{price}</p>
+        <h1 className="brastemp-purchase-title" itemProp="name">{title}</h1>
+        <p className="brastemp-purchase-description" itemProp="description">{description}</p>
+        <p className="brastemp-purchase-price" itemProp="price">{price}</p>
         <p className="brastemp-purchase-installments">{installments}</p>
-        <button /* onClick={notify} */ className="brastemp-purchase-button">
+        <button
+          /* onClick={notify} */
+          className="brastemp-purchase-button"
+          aria-label={`Clique para ${buttonLabel}`}
+        >
           {buttonLabel}
         </button>
       </div>
