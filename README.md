@@ -60,6 +60,10 @@ vtex use {workspace}
 vtex link
 ```
 
+#### Configuração da Rota na VTEX:
+
+Para que a landing page seja exibida corretamente, é necessário criar dentro do admin da vtex, em Pages, a página relacionada a Linha Retro e adicionar "brastemp-retro" como tema da página.
+
 
 
 

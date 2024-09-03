@@ -31,6 +31,17 @@
   gap:40px;
 }
 
+.flexRow :global(.vtex-button) {
+  background: #ff5722;
+  border: none;
+}
+
+.flexRow :global(.vtex-button__label) {
+  color: #fff;
+  font-family: "Gantari", sans-serif;
+  font-size: 14px;
+}
+
 
 @media (min-width: 1024px) {
 
