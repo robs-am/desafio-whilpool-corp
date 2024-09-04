@@ -68,7 +68,7 @@ const productSummarySchema = {
     buttonLabel: {
       type: "string",
       title: "Texto do Botão",
-      default: "Comprar"
+      default: "Adicionar ao Carrinho"
     }
   },
   required: ["title", "price", "description", "installments", "buttonLabel"],
