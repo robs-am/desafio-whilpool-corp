@@ -1,7 +1,18 @@
 {
   "compilerOptions": {
-    "jsx": "react"
+    "target": "ESNext",
+    "lib": ["dom", "esnext"],
+    "jsx": "react-jsx",
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
   },
+  "include": [
+    "./react/**/*"
+  ],
 
   "extends": "@vtex/tsconfig"
 }

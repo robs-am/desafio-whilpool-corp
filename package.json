@@ -7,7 +7,10 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "tailwindcss": "tailwindcss -i ./react/src/input.css -o ./react/dist/output.css --watch"
+    "tailwindcss": "tailwindcss -i ./react/src/input.css -o ./react/dist/output.css --watch",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "keywords": [],
   "author": "",
@@ -19,7 +22,8 @@
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-player": "^2.16.0",
-    "react-toastify": "^10.0.5"
+    "react-toastify": "^10.0.5",
+    "vite": "^5.4.3"
   },
   "devDependencies": {
     "tailwindcss": "^3.4.10",
